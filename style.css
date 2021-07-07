@@ -1,0 +1,131 @@
+/* HTML5 Practice Assignment 07/06
+** Andrew Bhatti
+*/
+
+* { /*set font and manage graphic clipping*/
+    overflow: auto;
+    font-family: Verdana;
+}
+
+body { /*manage page background*/
+    margin: 0 auto;
+    background-color: #263238;
+    padding: 0px;
+    max-width: 1000px;
+}
+
+h1 { /*manage page text*/
+    text-align: left;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #455A64;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+p { /*manage page text*/
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+
+a {
+    color: #e9723d;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+button {
+    margin: 0;
+    height: 3em;
+    padding: 0px 20px 0px 20px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    transition: all 0.15s ease-out;
+}
+
+button:hover {
+    color: #ffffff;
+    background-color: #455A64;
+}
+
+iframe {
+    display: block;
+    border: 0;
+    margin: 50px 0px 0px 0px;
+    width: 100%;
+    height: 700px;
+    overflow:hidden;
+}
+
+/*Custom Classes*/
+
+.shift {
+    flex: 100%;
+    transition: all 0.15s ease-out;
+    border-radius: 15px;
+}
+
+.shift:hover {
+    background-color: #e9723d;
+    transition: all 0.15s ease-out;
+    border-radius: 15px;
+    box-shadow: 8px 8px 4px #455A64;
+}
+
+.div-row {
+    display: flex;
+}
+
+.div-column {
+    flex: 50%;
+    padding: 0px 0px 10px 10px;
+}
+
+.stealth {
+    display: none;
+    padding: 5px 5px 0px 0px;
+    line-break: auto;
+    color: #ffffff;
+}
+
+.reveal {
+    height: 150px;
+    color: #e9723d;
+}
+
+.reveal:hover .stealth {
+    display: block;
+}
+
+.book-cover {
+    display: block;
+    margin-top: 85px;
+    margin-bottom: 20px;
+    width: 90%;
+    object-fit: contain;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 8px 8px 4px #455A64;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.footer {
+    margin: 0px 0px 0px 0px;
+    background-image: linear-gradient(#e9723d,rgb(24, 24, 24));
+    width: 100%;
+    color: #ffffff;
+    line-height: 2em;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.stealth, .reveal, .footer {
+    text-align: center;
+}
